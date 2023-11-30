@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN | FUNKOSHOP</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/1095b3c2ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    
+    <main class="container"> <!-- Inicio Main -->
+
+        <section class="form__container">
+            <h1 class="form__title">INGRESAR A MI CUENTA</h1>
+            <form class="form" autocomplete="off" method="post">
+                <div class="form__sub">
+                    <label class="form__label" for="email">Email:</label>
+                    <input class="form__input" type="email" name="email" id="email" placeholder="johndoe@correo.com">
+                </div>
+                <div class="form__sub">
+                    <label class="form__label" for="contrasenia">Contraseña:</label>
+                    <input class="form__input" type="password" name="contrasenia" id="contrasenia" placeholder="*********">
+                </div>
+                <div class="form__subtn">
+                    <button class="form__btn" type="submit">Ingresar</button>
+                    <div class="form__sub-div">
+                        <input class="form__chk" type="checkbox" name="recordarme" id="recordarme">
+                        <label class="form__lchk" for="recordarme">Recordarme</label>
+                    </div>
+                </div>
+                <div class="form__subtn">
+                    <a href="#">Olvidé mi contraseña</a>
+                </div>
+
+            </form>
+        </section>
+
+    </main> <!-- Fin Main -->
+
+    <%- include('../partials/footer') %>
+</body>
+</html>
